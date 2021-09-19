@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class = "app--header">
+    <img src = "./img/{keepable}.svg">
+    <p class = "welcome">Welcome to {keepable}</p>
+  </div>
+  <div class = "app--content"> 
+
+    <div class="sidebar">
+      <div class="sidebar__option option-selected" id="notes">
+        <img src="./img/notes.svg" alt="notes">
+        <p class="sidebar__text">Notes</p>
+      </div>
+      <div class="sidebar__option" id = "trash">
+        <img src="./img/sidebar_trash.svg" alt="deleted">
+        <p class="sidebar__text">Trash</p>
+      </div>
+    </div>
+
+    <div class="main--content">
+
+      <form class = "note-form">
+        <div class = "main--content--form">
+          <div class="card card--form background--white" data-type = "form">
+            <div class="content">
+              <input class = "title" placeholder="This is the title" name="title"></input>
+              <textarea class="body" placeholder="This is the body for the note." name="description" cols="30" rows="2"></textarea>
+            </div>
+            <div class="icons icons-form">
+                <div class ="colorize">
+                  <div class="icon" id = "colorOption"><img src="img/palette.svg" alt=""></div>                  
+                </div>
+                <div class="keep-it"><button class = "keep-it" type = 'submit'>Keep it!</button></div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div id = "root"></div>
+      
+    </div>
+  </div>
+</body>
+<script src="./scripts/domhandler.js"></script>
+<script src="./scripts/trash.js"></script>
+<script src="./scripts/card.js"></script>
+</html>

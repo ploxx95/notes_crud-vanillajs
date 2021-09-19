@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class = "app--header">
+    <img src = "./img/{keepable}.svg">
+    <p class = "welcome">Welcome to {keepable}</p>
+  </div>
+  <div class = "app--content"> 
+
+    <div class="sidebar">
+      <div class="sidebar__option option-selected" id="notes">
+        <img src="./img/notes.svg" alt="notes">
+        <p class="sidebar__text">Notes</p>
+      </div>
+      <div class="sidebar__option" id = "trash">
+        <img src="./img/sidebar_trash.svg" alt="deleted">
+        <p class="sidebar__text">Trash</p>
+      </div>
+    </div>
+
+    <div class="main--content">
+
+      <div class = "main--content--form">
+        <div class="card card--form background--white">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons icons-form">
+              <div class="icon"><img src="img/palette.svg" alt=""></div>
+              <div class="keep-it">Keep it!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "main--content--cards">
+
+        <div class="card background--white">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/palette.svg" alt=""></div>
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="card background--orange">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/palette.svg" alt=""></div>
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="card background--yellow">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/palette.svg" alt=""></div>
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="card background--light-blue">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/palette.svg" alt=""></div>
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="card background--red">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/palette.svg" alt=""></div>
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="card background--green">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/palette.svg" alt=""></div>
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="colors-palette background--white">
+          <div class="color-palette background--white border-grey"></div>
+          <div class="color-palette background--red"></div>
+          <div class="color-palette background--orange"></div>
+          <div class="color-palette background--yellow"></div>
+          <div class="color-palette background--green"></div>
+          <div class="color-palette background--cyan"></div>
+          <div class="color-palette background--light-blue"></div>
+          <div class="color-palette background--blue"></div>
+          <div class="color-palette background--purple"></div>
+          <div class="color-palette background--pink"></div>
+        </div>
+    </div>
+  </div>
+  <div id = "root"></div>
+</body>
+<script src="./scripts/store.js"></script>
+</html>

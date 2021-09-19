@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class = "app--header">
+    <img src = "./img/{keepable}.svg">
+    <p class = "welcome">Welcome to {keepable}</p>
+  </div>
+  <div class = "app--content"> 
+
+    <div class="sidebar">
+      <div class="sidebar__option" id="notes">
+        <img src="./img/notes.svg" alt="notes">
+        <p class="sidebar__text">Notes</p>
+      </div>
+      <div class="sidebar__option option-selected" id = "trash">
+        <img src="./img/sidebar_trash.svg" alt="deleted">
+        <p class="sidebar__text">Trash</p>
+      </div>
+    </div>
+
+    <div class="main--content">
+
+      <div class = "main--content--cards">
+
+        <div class="card background--blue">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+            <div class="icon"><img src="img/recover.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="card background--purple">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+            <div class="icon"><img src="img/recover.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="card background--yellow">
+          <div class="content">
+            <div class="title">This is the title</div>
+            <div class="body">This is the body for the note.</div>
+          </div>
+          <div class="icons">
+            <div class="icon"><img src="img/trash.svg" alt=""></div>
+            <div class="icon"><img src="img/recover.svg" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
